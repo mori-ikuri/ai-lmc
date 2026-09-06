@@ -1,4 +1,4 @@
-# AI-LMC
+﻿# AI-LMC
 
 **AI Legacy Modernization Corpus**
 
@@ -55,9 +55,11 @@ materials/
         01–04                the world the agent works inside (Japanese)
         90_HARNESS-RULES.md  how the run operates (English)
         artifacts/           the documents the system must replace
+        ref/                 the developer's own code from 2006 — the style specification
         on-request/          documents handed over only when asked for
         harness/             where questions and decisions are written
 docs/
+    DISTRIBUTION-PROTOCOL.md   how a participant bundle is assembled
 ```
 
 ### The two voices
