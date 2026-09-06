@@ -1,0 +1,47 @@
+# ============================================================
+# AI-LMC — contamination guard
+#
+# This repository is PUBLIC. The Q&A Bank, the artifact key, and
+# every sealed decision log are the experiment's answer key and
+# live in a separate private repository.
+#
+# These rules exist because a procedural mistake once placed the
+# artifact key into a bundle handed to a participant agent (see
+# PRE-REGISTRATION §9.2). Do not remove them. If a file below is
+# ever added deliberately, that is a design change, not a
+# convenience — amend the pre-registration first.
+# ============================================================
+
+# --- answer key: never commit ---
+*ARTIFACT-KEY*
+*QA-BANK*
+*QA_BANK*
+*EVALUATOR*
+*HANDOVER*
+*-sealed*
+sealed/
+**/sealed/
+
+# --- decision logs produced during a run ---
+assumptions-*.md
+**/assumptions-*.md
+
+# --- run working directories ---
+runs/
+participants/
+participant/
+
+# --- build output from any fixture opened locally ---
+bin/
+obj/
+*.suo
+*.user
+*.vbproj.user
+_UpgradeReport_Files/
+.vs/
+
+# --- os / editor noise ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+.obsidian/
