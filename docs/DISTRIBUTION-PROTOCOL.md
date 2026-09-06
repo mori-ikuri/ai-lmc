@@ -1,4 +1,4 @@
-# Distribution Protocol
+﻿# Distribution Protocol
 
 How a participant bundle is assembled, and what must never be in it.
 
@@ -108,7 +108,7 @@ Then confirm the file count:
 (Get-ChildItem -Recurse -File).Count
 ```
 
-Expected for Phase 01: **19**.
+Expected for Phase 01: **18**.
 
 ---
 
