@@ -35,9 +35,9 @@ a sealed log that is never reflected in the code.
 
 | | |
 |---|---|
-| Pre-registration | v0.1 published — [`PRE-REGISTRATION-v0.1.md`](PRE-REGISTRATION-v0.1.md) |
-| Phase 01 materials | published |
-| Fixture | not yet generated for the record |
+| Pre-registration | v0.2 — [`PRE-REGISTRATION-v0.2.md`](PRE-REGISTRATION-v0.2.md). v0.1 is retained unmodified as [`PRE-REGISTRATION-v0.1.md`](PRE-REGISTRATION-v0.1.md) |
+| Materials | Phases 01–07 published |
+| Fixture | generated — Phases 01–07 (2008–2017), ending with the original developer's handover |
 | Modernization runs | not started |
 
 Read the pre-registration first. It fixes the design, the evaluation criteria, and the
@@ -48,7 +48,8 @@ known limitations before any result exists.
 ## Repository layout
 
 ```
-PRE-REGISTRATION-v0.1.md     the registered design
+PRE-REGISTRATION-v0.1.md     the design as first registered
+PRE-REGISTRATION-v0.2.md     the current design, including the modernization procedure
 materials/
     phase01/
         00_START-HERE.md     reading order
@@ -58,6 +59,13 @@ materials/
         ref/                 the developer's own code from 2006 — the style specification
         on-request/          documents handed over only when asked for
         harness/             where questions and decisions are written
+    phase02/ … phase07/      materials for later phases, each written after the
+                             previous phase had completed
+fixture/
+    phase01/ … phase07/      the application as it stood at the end of each phase
+modernization/
+    依頼メモ.md               the migration request, exactly as handed to the modernizer
+    WORKING-RULES.md         deliverables and format
 docs/
     DISTRIBUTION-PROTOCOL.md   how a participant bundle is assembled
 ```
@@ -67,6 +75,9 @@ docs/
 `01`–`04` are written in Japanese and describe a world. `90` is written in English and
 addresses the agent as a tool. The split is deliberate: instructions to the harness must
 not be read as beliefs held by the persona.
+
+The same split applies to the modernization: the request is written in Japanese, by the
+company; the working rules are written in English and cover deliverables only.
 
 ### The artifacts are real files
 
